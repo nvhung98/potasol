@@ -108,6 +108,19 @@ nav ul li a {
   align-items: center;
 }
 
+.cloud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .cloud {
+    display: none;
+  }
+}
+
 .about-content {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -173,11 +186,40 @@ header .social-icons button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  background-image: url("/assets/goal-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 4/3;
+}
+
+@media (max-width: 1024px) {
+  .goals {
+    background-size: cover;
+  }
+}
+
+.goals .goal-h2 {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-size: 120px;
+  text-align: center;
+  color: #f9ba95;
+  text-shadow: 3px 3px 0px #000000;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .goals .goal-h2 {
+    font-size: 80px;
+  }
 }
 
 .goal-list {
   width: 100%;
-  background-color: #fff;
   padding: 40px 20px;
   text-align: center;
   display: flex;
@@ -189,22 +231,6 @@ header .social-icons button {
 @media (max-width: 1024px) {
   .goal-list {
     grid-template-columns: 1fr;
-  }
-}
-
-.goals h2 {
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 400;
-  font-size: 120px;
-  text-align: center;
-  color: #f9ba95;
-  text-shadow: 3px 3px 0px #000000;
-  border: none;
-}
-
-@media (max-width: 768px) {
-  .goals h2 {
-    font-size: 80px;
   }
 }
 
@@ -252,9 +278,6 @@ header .social-icons button {
 }
 
 footer {
-  /* position: absolute;
-  bottom: 0;
-  left: 0; */
   width: 100%;
   box-sizing: border-box;
 

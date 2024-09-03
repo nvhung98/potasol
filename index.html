@@ -1,111 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POTASOL</title>
+    <link rel="stylesheet" href="styles.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POTASOL</title>
-  <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Potta+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <section class="homepage">
+      <img
+        class="background"
+        src="/assets/farm-background.png"
+        alt="Farm background"
+      />
+      <div class="homepage-content">
+        <header>
+          <nav>
+            <div class="logo">POTASOL</div>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#goal">POTASOL GOAL</a></li>
+            </ul>
+          </nav>
+          <div class="social-icons">
+            <button>
+              <a href="https://twitter.com/potasolcoin" target="_blank"
+                ><img src="/assets/tw.svg" alt="Twitter Logo"
+              /></a>
+            </button>
+            <button onclick="openModal()" >
+              <!-- <a href="" target="_blank"> -->
+              <img src="/assets/tg.svg" alt="Telegram Logo" />
+              <!-- </a> -->
+            </button>
+          </div>
+        </header>
+      </div>
+    </section>
+    <footer style="background-color: #fff3e7">
+      <div class="footer-marquee">
+        <marquee
+          >POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔
+          POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔
+          POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL
+          🥔</marquee
+        >
+      </div>
+    </footer>
 
-<body>
-  <section class="homepage">
-    <img class="background" src="/assets/farm-background.png" alt="Farm background">
-    <div class="homepage-content">
-      <header>
-        <nav>
-          <div class="logo">POTASOL</div>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#goal">POTASOL GOAL</a></li>
-          </ul>
-        </nav>
-        <div class="social-icons">
-          <button>
-            <a href="https://twitter.com/potasolcoin" target="_blank"><img src="/assets/tw.svg" alt="Twitter Logo"></a>
-          </button>
-          <button>
-            <a href="https://t.me/potasolcoin" target="_blank"><img src="/assets/tg.svg" alt="Telegram Logo"></a>
-          </button>
+    <section class="about" id="about-us">
+      <div class="about-content">
+        <img class="cloud" src="/assets/cloud.png" alt="Cloud" />
+        <img
+          class="potato-character"
+          src="/assets/potato-character.png"
+          alt="Potato Character"
+        />
+
+        <div class="about-text">
+          <p>
+            your all-time favourite 🥔 good old potato in many forms frites,
+            mashed, roasted well-loved by billions of human beings.
+          </p>
+          <p class="solana-text">
+            now coming soon on
+            <img src="/assets/solana-logo.png" alt="Solana Logo" />.
+          </p>
+
+          <p>
+            a fun fresh meme coin that combines humour and blockchain
+            technology. Join us to reshape crypto world one meme at a time.
+          </p>
+          <div class="social-icons">
+            <button>
+              <a href="https://twitter.com/potasolcoin" target="_blank"
+                ><img src="/assets/tw.svg" alt="Twitter Logo"
+              /></a>
+            </button>
+            <!-- <button>
+              <a href="https://t.me/potasolcoin" target="_blank"
+                ><img src="/assets/tg.svg" alt="Telegram Logo"
+              /></a>
+            </button>
+            <button>
+              <a href="https://t.me/potasolcoin" target="_blank"
+                ><img src="/assets/cmc.svg" alt="CoinMarketCap Logo"
+              /></a>
+            </button> -->
+            <button onclick="openModal()">
+              <img src="/assets/tg.svg" alt="Telegram Logo" />
+            </button>
+            <button onclick="openModal()">
+              <img src="/assets/cmc.svg" alt="CoinMarketCap Logo" />
+            </button>
+          </div>
         </div>
-      </header>
-    </div>
-  </section>
-  <footer style="background-color: #FFF3E7;">
-    <div class="footer-marquee">
-      <marquee>POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔
-        POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔</marquee>
-    </div>
-  </footer>
+      </div>
+    </section>
 
-  <section class="about" id="about-us">
-    <div class="about-content">
-      <img class="cloud" src="/assets/cloud.png" alt="Cloud">
-      <img class="potato-character" src="/assets/potato-character.png" alt="Potato Character">
-
-      <div class="about-text">
-        <p>your all-time favourite 🥔 good old potato in many forms frites, mashed, roasted well-loved by billions of
-          human beings.</p>
-        <p class="solana-text">now coming soon on <img src="/assets/solana-logo.png" alt="Solana Logo">.
-        </p>
-
-        <p>
-          a fun fresh meme coin that combines
-          humour
-          and blockchain technology. Join us to reshape crypto world one meme at a time.
-        </p>
-        <div class="social-icons">
-          <button onclick="notfound()">
-            <a href="https://twitter.com/potasolcoin" target="_blank"><img src="/assets/tw.svg" alt="Twitter Logo"></a>
-          </button>
-          <button>
-            <a href="https://t.me/potasolcoin" target="_blank"><img src="/assets/tg.svg" alt="Telegram Logo"></a>
-          </button>
-          <button>
-            <a href="https://t.me/potasolcoin" target="_blank"><img src="/assets/cmc.svg" alt="CoinMarketCap Logo"></a>
-          </button>
+    <section class="goals" id="goal">
+      <div class="goal-h2">POTASOL GOAL</div>
+      <div class="goal-list">
+        <div class="goal goal-1">
+          <p class="goal-title">1000 followers</p>
+          <p>
+            On Twitter, we will launch meme coin on
+            <a target="_blank" href="https://tokr.fun">tokr.fun</a>
+          </p>
+        </div>
+        <div class="goal goal-2">
+          <p class="goal-title">3000 holders</p>
+          <p>
+            We will launch Telegram group (so we could get tgt and gossip or
+            throw a potato party lol)
+          </p>
+        </div>
+        <div class="goal goal-3">
+          <p class="goal-title">5000 holders</p>
+          <p>
+            We will setup AMA session on Telegram group to decide bigger plans
+            moving forward for socials and many more!
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="goals" id ="goal">
-    <div class="goal-h2">POTASOL GOAL</div>
-    <div class="goal-list">
-      <div class="goal goal-1">
-        <p class="goal-title">1000 followers</p>
-        <p>On Twitter, we will launch meme coin on <a target="_blank" href="https://tokr.fun">tokr.fun</a></p>
+    <footer style="background-color: #ffffed">
+      <div class="footer-marquee">
+        <marquee
+          >POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔
+          POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔
+          POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL
+          🥔</marquee
+        >
       </div>
-      <div class="goal goal-2">
-        <p class="goal-title">3000 holders</p>
-        <p>We will launch Telegram group (so we could get tgt and gossip or throw a potato party lol)</p>
+    </footer>
+
+    <div id="notfound" class="modal-container">
+      <div class="modal-content">
+        <div class="modal-icon-container">
+          <img src="/assets/404.png" alt="404 Icon" class="modal-icon" />
+          <h1 class="modal-oops-text">OOPS</h1>
+        </div>
+        <p>hater’s gonna hate</p>
+        <p>potasol’s gonna potate.</p>
+        <h2>Oops seems like the feature is not ready yet.</h2>
+        <h2>Come back again later!</h2>
       </div>
-      <div class="goal goal-3">
-        <p class="goal-title">5000 holders</p>
-        <p>We will setup AMA session on Telegram group to decide bigger plans moving forward for socials and many more!
-        </p>
-      </div>
+      <button onclick="closeModal()" class="modal-close-btn">
+        <div>ok bye</div>
+        <img src="/assets/close-btn.png" class="modal-close-icon" />
+      </button>
     </div>
-  </section>
-
-
-  <footer style="background-color: #FFFFED;">
-    <div class="footer-marquee">
-      <marquee>POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔
-        POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔 POTASOL 🥔</marquee>
-    </div>
-  </footer>
-  <script>
-    function notfound() {
-        window.open('404.html', 'Not Found Window', 'width=600,height=400');
-    }
-</script>
-</body>
-
+    <script>
+      function openModal() {
+        const modal = document.getElementById("notfound");
+        modal.style.display = "block";
+      }
+      function closeModal() {
+        const modal = document.getElementById("notfound");
+        modal.style.display = "none";
+      }
+    </script>
+  </body>
 </html>

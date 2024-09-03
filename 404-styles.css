@@ -25,9 +25,11 @@ body, html {
     height: 800px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 840px) {
     .container {
       max-width: 80% !important;
+      width: 840px;
+      height: 480px;
     }
   }
   

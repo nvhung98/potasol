@@ -5,6 +5,10 @@ body {
   padding: 0;
   min-height: 100vh;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 header {
   display: flex;
@@ -287,6 +291,7 @@ footer {
 }
 
 .footer-marquee {
+ 
   font-weight: bold;
 }
 

@@ -314,39 +314,34 @@ button {
 
 .modal-container {
   display: none;
-  position: fixed; /* Stay in place */
+  position: fixed;
   justify-content: center;
-  z-index: 1; /* Sit on top */
+  z-index: 1; 
   text-align: center;
-  left: 50%; /* Center horizontally */
-  top: 50%; /* Center vertically */
-  transform: translate(-50%, -50%); /* Adjust for centering */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-image: url('assets/404-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 120%; /* Default width */
-  max-width: 840px; /* Maximum width */
-  height: 100%; /* Auto height */
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 120%;
+  max-width: 840px;
+  height: 120%;
   max-height: 480px;
-}
-
-@media (max-width: 840px) {
-  .modal-container {
-      width: 90%; /* Keep width responsive */
-      height: auto; /* Maintain auto height */
-  }
+  background-color: #F7F2DF;
 }
 
 .modal-content {
   position: relative;
-  top: 20%;
+  top: 15%;
 }
 
 .modal-icon-container {
   position: relative;
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .modal-icon {
@@ -363,12 +358,17 @@ button {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 7rem;
+  font-size: 8rem;
   color: #FFB085;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
   font-family: "Poetsen One", sans-serif;
   text-shadow: 0.2rem 0.5rem #fff;
+}
+
+.modal-text-container {
+  position: relative;
+  display: inline-block;
 }
 
 .modal-content p {
@@ -378,12 +378,13 @@ button {
   font-family: "Overlock", sans-serif;
   font-weight: 900;
   font-style: italic;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 
 .modal-content h2 {
   margin: auto;
   font-family: 'Potta One', sans-serif;
+
 }
 
 .modal-close-btn {
@@ -391,7 +392,7 @@ button {
   align-items: center;
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 15px;
   background: transparent;
   border:1px solid #000 !important;
   border-radius: 0.5px;
@@ -401,6 +402,7 @@ button {
   color: #FFC107;
   font-weight: bold;
   height: auto !important;
+  z-index: 2;
   width: auto !important;
 }
 
@@ -426,4 +428,42 @@ button {
   color: #000;
   text-align: center;
   font-family: 'Potta One', serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 840px) {
+  .modal-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .modal-icon-container {
+    margin-bottom: 5px;
+  }
+
+  .modal-oops-text {
+    font-size: 3.5rem;
+  }
+
+  .modal-icon  {
+    max-width: 50%;
+  }
+
+  .modal-content p {
+    font-size: 0.6rem;
+  }
+
+  .modal-content h2 {
+    font-size: 0.8rem;
+  }
+
+  .modal-close-btn {
+    font-size: 0.5rem;
+  }
+
+  .modal-close-icon {
+    width: 10px; 
+    height: auto;
+
+  } 
 }
